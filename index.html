@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Drum Kit</h1>
+    <p>Choose a pad or press its key to play a sound.</p>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="pads-heading">
+      <h2 id="pads-heading">Drum pads</h2>
+      <ul>
+        <li><button type="button" class="drum-pad" data-key="a" data-sound="sounds/kick.wav" aria-keyshortcuts="A">Kick <kbd>A</kbd></button></li>
+        <li><button type="button" class="drum-pad" data-key="s" data-sound="sounds/snare.wav" aria-keyshortcuts="S">Snare <kbd>S</kbd></button></li>
+        <li><button type="button" class="drum-pad" data-key="d" data-sound="sounds/hihat.wav" aria-keyshortcuts="D">Hi-hat <kbd>D</kbd></button></li>
+        <li><button type="button" class="drum-pad" data-key="f" data-sound="sounds/clap.wav" aria-keyshortcuts="F">Clap <kbd>F</kbd></button></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
