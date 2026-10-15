@@ -13,3 +13,11 @@ function playSound(pad) {
 drumPads.forEach((pad) => {
   pad.addEventListener('click', () => playSound(pad));
 });
+
+window.addEventListener('keydown', (event) => {
+  if (event.repeat) return;
+
+  const key = event.key.toLowerCase();
+  const pad = [...drumPads].find((drumPad) => drumPad.dataset.key === key);
+  if (pad) playSound(pad);
+});
