@@ -1,0 +1,6 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; padding: 1.5rem; line-height: 1.6; }
+ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.drum-pad { width: 100%; padding: 2rem 1rem; font-size: 1.1rem; cursor: pointer; }
+.drum-pad.active { transform: scale(0.95); }
+:focus-visible { outline: 3px solid #0284c7; outline-offset: 2px; }
